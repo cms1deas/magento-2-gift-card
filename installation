@@ -1,0 +1,13 @@
+After downloading the package, please proceed with the following steps:
+Step 1:
+Please unzip the archive.
+Step 2:
+Disable cache at System -> Cache Management.
+Step 3:
+Unload the contents of the module package to the Magento root folder. This will not over write the existing Magento files, only the new contents will be added.
+Step 4:
+Using SSH, go to Magento root folder and run command below:
+1. Run command to update database : php bin/magento setup:upgrade
+2. Run command to deploy : php bin/magento setup:static-content:deploy
+Step 5:
+Refresh your admin user access rights: log out from your store admin and then login back. Next, please Enable Cache.
